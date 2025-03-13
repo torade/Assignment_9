@@ -19,6 +19,7 @@ public class GravelCar extends RallyCar{
     @Override
     public double calculatePerformance()
     {
-        return this.getHorsePower()*2/this.suspensionTravel;
+        double performance =  this.getHorsePower()/this.suspensionTravel;
+        return Math.round(performance*100.0)/100.0;
     }
 }

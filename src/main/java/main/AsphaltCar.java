@@ -19,6 +19,7 @@ public class AsphaltCar extends RallyCar{
     @Override
     public double calculatePerformance()
     {
-        return this.getHorsePower()*1.5/this.downforce;
+        double performance = this.getHorsePower()*2-this.downforce/2;
+        return Math.round(performance*100.0)/100.0;
     }
 }
