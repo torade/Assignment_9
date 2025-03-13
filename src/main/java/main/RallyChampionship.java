@@ -83,7 +83,6 @@ public class RallyChampionship
                 System.out.println("Total Championship Points: " + ChampionshipManager.getTotalChampionshipPoints());
 
 
-        //5. Demonstrate car switching between races 
         System.out.println("\n\n===== RACE RESULTS =====");
         List<RallyRaceResult> races = new ArrayList<>();
         races.add(race1);
